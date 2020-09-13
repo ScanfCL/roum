@@ -164,7 +164,7 @@ function Card({ children }) {
 
 function Particles({ children }) {
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: "relative", height: "100%" }}>
       <ReactParticles
         params={particlesConfig}
         style={{
@@ -209,12 +209,7 @@ function Image({ ratio, src }) {
 }
 
 function Info() {
-  return (
-    <div className="info">
-      Congratulations Roum นะงับ 5555555+
-      <div className="notice">(best viewed at larger screen width)</div>
-    </div>
-  );
+  return <div className="info">Congratulations Roum นะงับ 5555555+</div>;
 }
 
 const cards = [
