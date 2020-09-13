@@ -12,6 +12,7 @@ function App() {
   const ref4 = useRef();
   const ref5 = useRef();
   const ref6 = useRef();
+  console.log("tset");
 
   function scrollDown(el) {
     if (el === 1) {
