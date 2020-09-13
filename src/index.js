@@ -200,7 +200,7 @@ function Image({ ratio, src }) {
           }}
         >
           <div className="ratio-inner">
-            <img src={src} />
+            <img src={src} alt="test-ja" />
           </div>
         </div>
       </div>
