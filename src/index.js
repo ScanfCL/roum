@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Congrat } from "./pages/Congrat";
 import { HNY } from "./pages/HNY";

@@ -1,10 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import styled from "styled-components";
-import ReactPlayer from "react-player";
 
 import { Snow } from "../components/SnowEffect";
 import { MenuCard } from "../components/MenuCard";
-import { useMain } from "../index";
 
 const Home = ({ className }) => {
   return (

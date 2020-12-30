@@ -4,11 +4,9 @@ import { Link } from "react-router-dom";
 
 import { useOnClickOutside } from "../utilities/hooks/useOnClickOutside";
 import hat from "../statics/images/santa-hat.png";
-import { useMain } from "../index";
 
 const MenuCard = ({ className, text, date, to, ...props }) => {
   const ref = useRef();
-  const { setMuted } = useMain();
   const [isFlip, setIsFlip] = useState(false);
 
   useOnClickOutside(ref, () => setIsFlip(false));
@@ -18,7 +16,7 @@ const MenuCard = ({ className, text, date, to, ...props }) => {
       <div className={`flip-card-inner ${isFlip ? "flip" : ""}`} ref={ref}>
         <div className="flip-card-front" onClick={() => setIsFlip(true)}>
           <div className="text">{text}</div>
-          <img className="hat" src={hat} />
+          <img alt="hat" className="hat" src={hat} />
           <div className="bow-x" />
           <div className="bow-y" />
         </div>
